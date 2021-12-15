@@ -1,0 +1,5 @@
+RewriteEngine on
+RewriteCond %{ENV:REDIRECT_STATUS} ^$
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_F/LENAME} !-f
+RewriteRule . /index.php [L]
